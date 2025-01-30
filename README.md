@@ -2,8 +2,8 @@
 
 ## 📍 Exercice 1 : Structure de base d'une page HTML
 Créez une page HTML simple avec la structure de base suivante :
-<!DOCTYPE html>
-<html>
+    <!DOCTYPE html>
+        <html>
 <head>
     <title>Ma première page</title>
 </head>
