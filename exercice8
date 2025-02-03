@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page audio-vidéo</title>
+</head>
+<body>
+    <h1>Fichier vidéo</h1>
+    
+    <h2>Vidéo sur l'apprentissage du langage de balisage HTML</h2>
+    <figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UB1O30fR-EE" 
+                title="YouTube video" frameborder="0" allowfullscreen></iframe>
+        <figcaption>Une vidéo expliquant les bases du langage HTML.</figcaption>
+    </figure><br>
+    
+    <h2>Fichier Audio</h2>
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+    </audio>
+
+</body>
+</html>
