@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reservation en ligne</title>
+</head>
+<body>
+    <h1>Inscription</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Remplir le formulaire d'inscription</legend><br>
+            
+            <label for="nom">Nom complet :</label>
+            <input type="text" id="nom" name="nom" required><br><br>
+            
+            <label for="email">Adresse email :</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="motdepasse">Mot de passe :</label>
+            <input type="password" id="motdepasse" name="motdepasse" required><br><br>
+            
+            <label for="pays">Selectionnez votre pays :</label>
+            <select id="pays" name="pays" required>
+                <option value="">Sélectionnez un pays</option>
+                <option value="senegal">Senegal</option>
+                <option value="benin">Benin</option>
+                <option value="maroc">Maroc</option>
+                <option value="togo">Togo</option>
+                <option value="nigeria">Nigeria</option>
+                <option value="burkina">Burkina</option>
+                <option value="burundi">Burundi</option>
+                <option value="inde">Inde</option>
+                <option value="congo">Congo</option>
+                <option value="cote ivoir">Cote ivoir</option>
+            </select><br><br>
+            <label for="genre">Selectionnez votre genre :</label>
+            <select id="genre" name="genre" required>
+                <option value="">Sélectionnez un genre</option>
+                <option value="homme">Homme</option>
+                <option value="femme">Femme</option>
+                <option value="autre">Autre</option>
+            </select><br><br>
+            
+            <input type="checkbox" id="conditions" name="conditions" required>
+            <label for="conditions">J'accepte les conditions générales</label><br><br>
+            
+            <button type="submit">S'inscrire</button>
+            <button type="reset">Réinitialiser</button>
+        </fieldset>
+    </form>
+</body>
+</html>
