@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription en ligne</title>
+</head>
+<body>
+
+    <h1>Fiche d'Inscription</h1>
+    <form action="#" method="post" onsubmit="return validateForm()">
+        <fieldset>
+            <legend>Veuillez remplir le formulaire</legend>
+
+            <label for="email">Adresse email :</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="date_naissance">Date de naissance :</label>
+            <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+
+            <label for="age">Âge :</label>
+            <input type="number" id="age" name="age" min="18" max="100" required><br><br>
+
+            <button type="submit">S'inscrire</button>
+        </fieldset>
+    </form>
+
+    <script>
+        function validateForm() {
+            const email = document.getElementById('email').value;
+            const birthDate = document.getElementById('date_naissance').value;
+            const age = document.getElementById('age').value;
+
+            if (!email || !birthDate || !age) {
+                alert("Tous les champs obligatoires doivent être remplis.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+</body>
+</html>
