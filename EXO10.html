@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Avancé</title>
+</head>
+<body>
+
+    <h2>Formulaire d'Inscription</h2>
+
+    <form action="#" method="post" onsubmit="return validateForm()">
+        <!-- Champ Email avec validation HTML5 -->
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required placeholder="Votre email" /><br><br>
+
+        <!-- Champ Date de naissance -->
+        <label for="birthdate">Date de naissance :</label>
+        <input type="date" id="birthdate" name="birthdate" required /><br><br>
+
+        <!-- Champ Âge avec validation numérique -->
+        <label for="age">Âge :</label>
+        <input type="number" id="age" name="age" min="18" max="100" required placeholder="Votre âge" /><br><br>
+
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <script>
+        // Fonction pour valider les champs avant l'envoi du formulaire
+        function validateForm() {
+            // Récupérer les éléments du formulaire
+            const email = document.getElementById("email").value;
+            const birthdate = document.getElementById("birthdate").value;
+            const age = document.getElementById("age").value;
+
+            // Vérifier si tous les champs requis sont remplis
+            if (!email || !birthdate || !age) {
+                alert("Tous les champs obligatoires doivent être remplis.");
+                return false;
+            }
+
+            // Si tout est correct, soumettre le formulaire
+            return true;
+        }
+    </script>
+
+</body>
+</html>

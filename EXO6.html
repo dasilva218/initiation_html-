@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+</head>
+<body>
+
+    <h2>Inscription</h2>
+
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Remplissez ce formulaire pour vous inscrire</legend>
+
+            <!-- Champ Nom Complet -->
+            <label for="nom">Nom complet :</label>
+            <input type="text" id="nom" name="nom" required>
+            <br><br>
+
+            <!-- Champ Email -->
+            <label for="email">Adresse email :</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <!-- Champ Mot de passe -->
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+
+            <!-- Boutons Radio pour le Genre -->
+            <label>Genre :</label>
+            <input type="radio" id="homme" name="genre" value="homme">
+            <label for="homme">Homme</label>
+            <input type="radio" id="femme" name="genre" value="femme">
+            <label for="femme">Femme</label>
+            <input type="radio" id="autre" name="genre" value="autre">
+            <label for="autre">Autre</label>
+            <br><br>
+
+            <!-- Liste déroulante pour choisir un pays -->
+            <label for="pays">Pays :</label>
+            <select id="pays" name="pays" required>
+                <option value="">Sélectionnez un pays</option>
+                <option value="france">France</option>
+                <option value="canada">Canada</option>
+                <option value="belgique">Belgique</option>
+                <option value="suisse">Suisse</option>
+                <option value="autre">Autre</option>
+            </select>
+            <br><br>
+
+            <!-- Case à cocher pour accepter les conditions -->
+            <input type="checkbox" id="conditions" name="conditions" required>
+            <label for="conditions">J'accepte les conditions générales</label>
+            <br><br>
+
+            <!-- Boutons -->
+            <button type="submit">S'inscrire</button>
+            <button type="reset">Réinitialiser</button>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>

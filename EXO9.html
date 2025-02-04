@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Structurée avec CSS</title>
+    <style>
+        /* Style général pour la page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Style pour l'en-tête */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style pour le contenu principal */
+        main {
+            padding: 20px;
+        }
+
+        article h2 {
+            color: #333;
+            font-size: 2em;
+        }
+
+        article p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Style pour la section aside */
+        aside {
+            background-color: #e9e9e9;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        aside h3 {
+            color: #333;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin-bottom: 10px;
+        }
+
+        aside ul li a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        aside ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style pour le pied de page */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section d'en-tête -->
+    <header>
+        <h1>Bienvenue sur notre site</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section principale -->
+    <main>
+        <article>
+            <h2>Titre de l'Article</h2>
+            <p>Voici un paragraphe d'exemple pour l'article. Il contient du contenu intéressant et pertinent pour les lecteurs. Les articles peuvent être utilisés pour fournir des informations détaillées et structurées.</p>
+        </article>
+    </main>
+
+    <!-- Section latérale -->
+    <aside>
+        <h3>Informations supplémentaires</h3>
+        <ul>
+            <li><a href="#link1">Lien supplémentaire 1</a></li>
+            <li><a href="#link2">Lien supplémentaire 2</a></li>
+            <li><a href="#link3">Lien supplémentaire 3</a></li>
+        </ul>
+    </aside>
+
+    <!-- Section de pied de page -->
+    <footer>
+        <p>&copy; 2025 Mon Site Web. Tous droits réservés.</p>
+        <p>Contactez-nous : <a href="mailto:contact@monsite.com">contact@monsite.com</a></p>
+    </footer>
+
+</body>
+</html>

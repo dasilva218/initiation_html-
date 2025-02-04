@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .table-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        thead {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tfoot {
+            background-color: #f8f9fa;
+            font-style: italic;
+        }
+
+        .note {
+            text-align: center;
+            color: #555;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="table-container">
+        <h2>Liste des personnes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Âge</th>
+                    <th>Ville</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jean Dupont</td>
+                    <td>25</td>
+                    <td>Paris</td>
+                </tr>
+                <tr>
+                    <td>Marie Curie</td>
+                    <td>30</td>
+                    <td>Lyon</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Paul Martin (Âge inconnu)</td>
+                    <td>Marseille</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="note">Les données sont fictives.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+</html>

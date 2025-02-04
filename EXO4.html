@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page avec Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .image-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        p {
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mes Images</h1>
+
+    <div class="image-container">
+        <!-- Image locale -->
+        <img src="images/nature.jpg" alt="Belle photo de nature avec des montagnes et un lac">
+        <p>Image locale depuis le dossier 'images'</p>
+
+        <!-- Image en ligne -->
+        <img src="https://picsum.photos/800/400" alt="Image aléatoire depuis Lorem Picsum">
+        <p>Image en ligne depuis Lorem Picsum</p>
+    </div>
+</body>
+</html>
