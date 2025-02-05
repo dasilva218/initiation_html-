@@ -1,0 +1,59 @@
+html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Données</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tfoot td {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Âge</th>
+                <th>Ville</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jean Dupont</td>
+                <td>25</td>
+                <td rowspan="2">Paris</td>
+            </tr>
+            <tr>
+                <td>Marie Durand</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>2 personnes</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Note : Données fictives pour l'exemple.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+
+

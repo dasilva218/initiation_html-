@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+</head>
+<body>
+
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Formulaire d'inscription ecole 241</legend>
+
+            <label for="fullname">Nom complet :</label>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="email">Adresse email :</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <!-- Liste déroulante pour choisir un pays -->
+            <label for="country">Choisissez un pays :</label>
+            <select id="country" name="country" required>
+                <option value="france">GABON</option>
+                <option value="belgium">CAMEROUN</option>
+                <option value="switzerland">MALI</option>
+                <option value="canada">TOGO</option>
+            </select><br><br>
+
+            <!-- Case à cocher pour accepter les conditions générales -->
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                J'accepte les conditions générales
+            </label><br><br>
+
+            <!-- Boutons radio pour le genre -->
+            <label>Genre :</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Homme</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Femme</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Autre</label><br><br>
+
+            <!-- Bouton pour soumettre le formulaire -->
+            <button type="submit">S'inscrire</button>
+            <!-- Bouton pour réinitialiser le formulaire -->
+            <button type="reset">Réinitialiser</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>

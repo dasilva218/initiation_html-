@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire avec options</title>
+</head>
+<body>
+    <h2>Formulaire d'inscription</h2>
+    <form action="" method="post">
+        <!-- Liste déroulante pour choisir un pays -->
+        <label for="pays">Choisissez un pays :</label>
+        <select id="pays" name="pays">
+            <option value="france">France</option>
+            <option value="belgique">Belgique</option>
+            <option value="suisse">Suisse</option>
+            <option value="canada">Canada</option>
+        </select><br><br>
+
+        <!-- Case à cocher pour accepter les conditions générales -->
+        <label for="conditions">J'accepte les conditions générales :</label>
+        <input type="checkbox" id="conditions" name="conditions"><br><br>
+
+        <!-- Boutons radio pour indiquer le genre -->
+        <label>Genre :</label>
+        <input type="radio" id="homme" name="genre" value="homme">
+        <label for="homme">Homme</label>
+        <input type="radio" id="femme" name="genre" value="femme">
+        <label for="femme">Femme</label><br><br>
+
+        <!-- Bouton pour réinitialiser le formulaire -->
+        <input type="reset" value="Réinitialiser le formulaire"><br><br>
+
+        <!-- Bouton de soumission -->
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
