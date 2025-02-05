@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire d'inscription</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Formulaire d'inscription Ecole241</legend>
+            
+            <label for="nom-complet">Nom complet :</label>
+            <input type="text" id="nom-complet" name="nom-complet" required><br><br>
+            
+            <label for="email">Adresse email :</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            <label for="pays">Choisir un pays :</label>
+            <select id="pays" name="pays" required>
+                <option value="">Sélectionnez un pays</option>
+                <option value="france">France</option>
+                <option value="ghana">Ghana</option>
+                <option value="canada">Canada</option>
+                <option value="senegal">Senegal</option>
+            </select><br><br>
+            <fieldset>
+                <legend>Genre :</legend>
+                <input type="radio" id="homme" name="genre" value="homme" required>
+                <label for="homme">Homme</label><br>
+                <input type="radio" id="femme" name="genre" value="femme">
+                <label for="femme">Femme</label><br>
+            </fieldset><br>
+            
+            <input type="checkbox" id="conditions" name="conditions" required>
+            <label for="conditions">J'accepte les conditions générales</label><br><br>
+            
+            <button type="submit">S'inscrire</button>
+            <button type="reset">Réinitialiser</button>
+        </fieldset>
+    </form>
+</body>
+</html>
