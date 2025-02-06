@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulaire d'Inscription</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Informations d'Inscription</legend>
+
+      <label for="nom">Nom complet :</label><br>
+      <input type="text" id="nom" name="nom" required><br><br>
+
+      <label for="email">Adresse email :</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="motdepasse">Mot de passe :</label><br>
+      <input type="password" id="motdepasse" name="motdepasse" required><br><br>
+
+      <label for="pays">Pays :</label><br>
+      <select id="pays" name="pays">
+        <option value="france">France</option>
+        <option value="canada">Canada</option>
+        <option value="etats-unis">États-Unis</option>
+        </select><br><br>
+
+      <input type="checkbox" id="conditions" name="conditions" required>
+      <label for="conditions">J'accepte les conditions générales</label><br><br>
+
+      <p>Genre :</p>
+      <input type="radio" id="homme" name="genre" value="homme" required>
+      <label for="homme">Homme</label>
+      <input type="radio" id="femme" name="genre" value="femme">
+      <label for="femme">Femme</label><br><br>
+
+      <input type="submit" value="S'inscrire">
+      <input type="reset" value="Réinitialiser">
+    </fieldset>
+  </form>
+</body>
+</html>
