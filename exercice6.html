@@ -1,73 +1,84 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Formulaire avec option</title>
-</head>
-<body>
-<h1> MBA NDONG Stephane</h1>
-<h2>Je vous souhaite une bonne visite </h2>
+  <head>
+    <title>Formulaire avec option</title>
+  </head>
+  <body>
+    <h1>MBA NDONG Stephane</h1>
+    <h2>Je vous souhaite une bonne visite</h2>
 
-<form>
-<div>   
-<legend>Formulaire d'inscription</legend>
-</div>
+    <form>
+      <div>
+        <legend>
+          Formulaire d'inscription avec demande d'information plus detaillée
+        </legend>
+      </div>
 
-<br>
-<div>             
-<label for="nom_complet">Nom complet :</label>
-<input type="text" id="nom_complet" name="nom_complet" required>
-</div>
+      <br />
+      <div>
+        <label for="nom_complet">Nom complet :</label>
+        <input type="text" id="nom_complet" name="nom_complet" required />
+      </div>
 
-<br>
-<div>
-<label>Genre :</label>
-<label for="genre_masculin">Masculin</label>
-<input type="radio" id="genre_masculin" name="genre" value="masculin" required>
-<label for="genre_feminin">Féminin</label>
-<input type="radio" id="genre_feminin" name="genre" value="feminin" required>
-</div>
+      <br />
+      <div>
+        <label>Genre :</label>
+        <label for="genre_masculin">Masculin</label>
+        <input
+          type="radio"
+          id="genre_masculin"
+          name="genre"
+          value="masculin"
+          required
+        />
+        <label for="genre_feminin">Féminin</label>
+        <input
+          type="radio"
+          id="genre_feminin"
+          name="genre"
+          value="feminin"
+          required
+        />
+      </div>
 
+      <br />
+      <div>
+        <label for="pays">Choisissez votre pays :</label>
+        <select id="pays" name="pays" required>
+          <option value="gabon">Gabon</option>
+          <option value="france">France</option>
+          <option value="canada">Canada</option>
+          <option value="autre">Autre</option>
+        </select>
+      </div>
 
-<br>
-<div>
-<label for="pays">Choisissez votre pays :</label>
-<select id="pays" name="pays" required>
-<option value="gabon">Gabon</option>
-<option value="france">France</option>
-<option value="canada">Canada</option>
-<option value="autre">Autre</option>
-</select>
-</div>
+      <br />
+      <div>
+        <label for="email">Adresse email :</label>
+        <input type="email" id="email" name="email" required />
+      </div>
 
-<br>
-<div>       
-<label for="email">Adresse email :</label>
-<input type="email" id="email" name="email" required>
-</div>     
+      <br />
+      <div>
+        <label for="mot_de_passe">Mot de passe :</label>
+        <input type="password" id="mot_de_passe" name="mot_de_passe" required />
+      </div>
 
-<br>
-<div>     
-<label for="mot_de_passe">Mot de passe :</label>
-<input type="password" id="mot_de_passe" name="mot_de_passe" required>
-</div>  
+      <br />
+      <div>
+        <label for="conditions">J'accepte les conditions générales</label>
+        <input type="checkbox" id="conditions" name="conditions" required />
+      </div>
 
-<br>
-<div>
-<label for="conditions">J'accepte les conditions générales</label>
-<input type="checkbox" id="conditions" name="conditions" required>
-</div>
+      <br />
+      <div>
+        <button type="reset">Réinitialiser</button>
+      </div>
 
-<br>
-<div>
-<button type="reset">Réinitialiser</button>
-</div>    
-
-<br>
-<div>       
-<button type="submit">S'inscrire</button>
-</div>
-</form>
-
-</body>
+      <br />
+      <div>
+        <button type="submit">S'inscrire</button>
+      </div>
+    </form>
+  </body>
 </html>
-
