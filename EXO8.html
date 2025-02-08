@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Éléments multimédias</title>
+    <title>Introduction HTML - Vidéo et Audio</title>
+
 </head>
+
 <body>
+    <div class="container">
+        <h1>Introduction au HTML</h1>
 
-    <!-- Vidéo locale -->
-    <figure>
-        <video width="600" controls>
-            <source src="https://www.youtube.com/watch?v=W8GhdeM-62E" video locale">
-            Votre navigateur ne supporte pas la lecture de vidéos.
-        </video>
-        <figcaption>Vidéo locale intégrée</figcaption>
-    </figure>
+        <!-- Vidéo -->
+        <div class="video-container">
+            <figure>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/qsbkZ7gIKnc" title="Les bases du HTML"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <figcaption>Tutoriel complet sur les bases du HTML</figcaption>
+            </figure>
+        </div>
 
-    <!-- Vidéo YouTube -->
-    <figure>
-        <iframe width="600" height="340" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-        <figcaption>Vidéo YouTube intégrée</figcaption>
-    </figure>
+        <!-- Audio -->
+        <div class="audio-section">
+            <div class="audio-container">
+                <div class="audio-title">Un fichier audio</div>
+                <audio controls>
+                    <source src="audios/bungle_bang_madafaka_preto_show_x_djorge_cadete_x_dj_galio_mp3_62345.mp3"
+                        type="audio/mp3">
+                    Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+            </div>
+        </div>
+    </div>
 
-    <!-- Audio avec contrôles -->
-    <audio controls>
-        <source src="audio.mp3" type="audio/mp3">
-        Votre navigateur ne supporte pas la lecture audio.
-    </audio>
+    <script>
+        // Animation au chargement
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.querySelector('.container');
+            container.style.opacity = '0';
+            container.style.transform = 'translateY(20px)';
 
+            setTimeout(() => {
+                container.style.transition = 'all 0.8s ease';
+                container.style.opacity = '1';
+                container.style.transform = 'translateY(0)';
+            }, 100);
+        });
+    </script>
 </body>
+
 </html>
